@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Battle Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1 id="app-title">Battle Simulator</h1>
+
+      <div class="controls" role="region" aria-label="Controls">
+        <label for="lang" class="visually-hidden">Language</label>
+        <select id="lang" aria-label="Language selector">
+          <option value="en">English (EN)</option>
+          <option value="pt-BR">Português (PT-BR)</option>
+          <option value="es">Español (ES)</option>
+        </select>
+
+        <button id="theme-toggle" aria-pressed="true" aria-label="Toggle theme">
+          <span id="theme-icon" aria-hidden="true">
+            <!-- Moon icon (dark) shown by default -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+            </svg>
+          </span>
+          <span class="visually-hidden" id="theme-label">Dark mode</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" id="main" role="main">
+    <section class="creature-card" aria-labelledby="creature-name">
+      <h2 id="creature-name">Prismarine Colossus</h2>
+      <p id="creature-desc">Enormous prismarine statue over 20 meters tall.</p>
+
+      <dl class="attributes" aria-label="Creature attributes">
+        <div>
+          <dt>Health</dt>
+          <dd><progress id="boss-health" max="100" value="100"></progress><span id="boss-health-text">100 / 100</span></dd>
+        </div>
+        <div>
+          <dt>Attack</dt>
+          <dd><span id="boss-attack">5</span></dd>
+        </div>
+        <div>
+          <dt>Defense</dt>
+          <dd><span id="boss-defense">6</span></dd>
+        </div>
+        <div>
+          <dt>Speed</dt>
+          <dd><span id="boss-speed">2</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="player-card" aria-labelledby="player-name">
+      <h2 id="player-name">Hero</h2>
+      <p id="player-desc">You wield your sword and prepare for battle.</p>
+
+      <dl class="attributes" aria-label="Player attributes">
+        <div>
+          <dt>Health</dt>
+          <dd><progress id="player-health" max="100" value="100"></progress><span id="player-health-text">100 / 100</span></dd>
+        </div>
+        <div>
+          <dt>Attack</dt>
+          <dd><span id="player-attack">4</span></dd>
+        </div>
+        <div>
+          <dt>Defense</dt>
+          <dd><span id="player-defense">3</span></dd>
+        </div>
+        <div>
+          <dt>Speed</dt>
+          <dd><span id="player-speed">3</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="actions" aria-labelledby="actions-title">
+      <h3 id="actions-title">Actions</h3>
+      <ul id="action-list" role="list" aria-label="Available actions">
+        <!-- Actions injected by JS -->
+      </ul>
+    </section>
+
+    <section class="console" aria-labelledby="console-title">
+      <h3 id="console-title">Battle Log</h3>
+      <div id="log" class="log" role="log" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <small id="credits">© Battle Simulator</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
