@@ -9,13 +9,13 @@ Building a battle simulator using multiple Lua scripts as modules, an infinite l
 - **Multilanguage**: English (EN-US) default, Português (PT-BR) and Español (ES).
 - **Accessible**: semantic HTML, keyboard operable, `aria-live` battle log.
 - **Responsive**: works on desktop, tablet and smartphone.
-- **No build tools required** — just open `index.html`.
+- **No build tools required** - just open `index.html`.
 
 ## Technologies Used
 
-- **HTML** — main markup (semantic and accessible).
-- **CSS**** — styling with CSS variables and responsive layout.
-- **JavaScript** — game logic, i18n, theme toggle and UI updates.
+- **HTML** - main markup (semantic and accessible).
+- **CSS** - styling with CSS variables and responsive layout.
+- **JavaScript** - game logic, i18n, theme toggle and UI updates.
 
 ## How to run
 
