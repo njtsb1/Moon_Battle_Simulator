@@ -35,4 +35,8 @@ Building a battle simulator using multiple Lua scripts as modules, an infinite l
 - Edit `i18n` object in `script.js` to change texts or add languages.
 - Adjust stats in `script.js` `state` object to tune difficulty.
 
+![Screenshot](/docs/public/battle_simulator.png)
+
 [LICENSE](/LICENSE)
+
+See [original repository](https://github.com/digitalinnovationone/trilha-lua/tree/main/M%C3%B3dulo%202/Simulador%20de%20Batalha).
